@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  restaurantdb_url: jdbc:mysql://restaurantdb.cdmg6w0804tc.us-east-2.rds.amazonaws.com:3306/restaurantdb?useSSL=false&serverTimezone=UTC
+  foodcataloguedb_url: jdbc:mysql://foodcataloguedb.cdmg6w0804tc.us-east-2.rds.amazonaws.com/foodcataloguedb?useSSL=false&serverTimezone=UTC
+  userdb_url: jdbc:mysql://userdb.cdmg6w0804tc.us-east-2.rds.amazonaws.com/userdb?useSSL=false&serverTimezone=UTC
+  orderdb_url: mongodb+srv://admin:eusou100@pedidodb.27xpu.mongodb.net/?retryWrites=true&w=majority&appName=pedidodb
+  eureka_service_address: http://eureka-0.eureka-service:8761/eureka
+  
